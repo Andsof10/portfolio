@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grenze:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@keyframes rotateAnimation {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(45deg);
+    }
+    50% {
+        transform: rotate(-45deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes rotation {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(359deg);
+    }
+}
+
+#text {
+    font-size: 2em;
+    margin-right: 20px;
+    white-space: nowrap;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+#image {
+    width: 400px;
+    height: 100px;
+    background: url('../images/linkode.webp') no-repeat center center;
+    background-size: cover;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    background: linear-gradient(90deg, rgba(255,193,7,1) 0%, rgba(108,117,125,1) 100%); !important;
+}
+
+.footer{
+    background-color: #1A1A1A !important;
+}
+
+h1{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 1000;
+    font-style: normal;
+}
+
+#logo{
+    width: 3rem !important;
+}
+
+#img-profile {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+}
+
+#img-link{
+    width: 200px;
+    height: 100px;
+}
+
+.profile {
+    background-color: rgb(33, 37, 255,) !important; 
+}
+
+.card-portfolio  {
+    background-color: #1A1A1A !important;
+    transition: background-color 0.5s, transform 0.5s;
+}
+
+.card-portfolio:hover{
+    background-color: #2A2A2A !important;
+    transform: scale(1.05);
+}
+
+.icon_social{
+    width: 2.5rem;
+    transition: transform 0.5s;
+}
+
+.icon_social:hover {
+    transform: scale(1.33);
+}
+
+.icon_program{
+    width: 1.5rem;
+}
+
+.date-work{
+    position: absolute;
+    bottom: 3%;
+    right: 5%;
+}
+
+.users{
+    background-color: #1A1A1A !important;
+    transition: background-color 0.5s ,transform 0.5s;
+}
+.users:hover{
+    background-color: #2A2A2A !important;
+    transform: scale(1.10);
+}
+
+.btn-card-portfolio{
+    position: absolute;
+    bottom: 8%;
+    right: 6%;
+}
+
+.btn-card-user{
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+}
+
+.btn-card:hover{
+    color: #1A1A1A !important;
+    background-color: #ffc107;  
+}
+
+.image-container {
+    height: 100%;
+}
+
+.image-container img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100%;
+}
+
+nav {
+    background-color: #1A1A1A !important;
+}
+
+#row-users{
+    --bs-gutter-x: 0rem !important; 
+}
+
+.form-container {
+    max-width: 400px;
+    margin: auto;
+    background-color: #1A1A1A !important;
+}
+
+.form-control-login {
+    width: 100%;
+}
+
+.btn-submit {
+    width: 100%;
+}
+
+label:after{
+    background-color: #212529 !important;
+    color: #6c757d !important;
+}
+
+#inputFile{
+    position: relative;
+    top: 10px;
+    left: 65px;
+    cursor: pointer;
+}
+
+#inputFile:hover{
+    animation: rotateAnimation 0.8s ease-in-out;
+}
+
+.fa-plus:hover{
+    animation: rotation 1s;
+}
+
+#changeNameWork{
+    position: relative;
+    top: 20px;
+    left: 80px;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+#addSocialBtn{
+    position: relative;
+    bottom: 30px;
+    cursor: pointer;
+}
+
+.deleteSocialBtn{
+    position: relative;
+    bottom: 10px;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+#changeCover {
+    position: relative;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+#changeCover:hover {
+    animation: rotateAnimation 0.8s ease-in-out;
+}
+
+#changeContentCoverBtn{
+    position: relative;
+    bottom: 20px;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.deleteProjectBtn, .deleteExperienceBtn{
+    position: relative;
+    bottom: 5px;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+#addProjectBtn, #addExperienceBtn{
+    position: relative;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+#addLanguageBtn, .deleteLanguageBtn, #addCodeBtn, 
+.deleteCodeBtn{
+    cursor: pointer;
+    transition: transform 0.5s;
+
+}
+
+.deleteLanguageBtn:hover, 
+.deleteCodeBtn:hover, #changeNameWork:hover, #changeContentCoverBtn:hover, .deleteSocialBtn:hover, .deleteProjectBtn:hover, .deleteExperienceBtn:hover{
+    transform: scale(1.20);
+}
+
+
+
+
